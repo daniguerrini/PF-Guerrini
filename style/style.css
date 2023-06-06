@@ -50,24 +50,24 @@ body {
     }
     .video{
         grid-area: video;
-        width: 100%;
+        width: 1024px;
         height: 400px;
     }
     .articuloPrincipal{
         grid-area: articulo;
         display:flex;
-        height: 280px;
-        width: 100%;
+        height: 300px;
+        width: 1024px;
     }
     .serviciosInicio{
         grid-area: servicios;
         display:flex;
         height: 400px;
-        width: 100%;
+        width: 1024px;
     }
     .imagenFinal{
         grid-area: imagen;
-        width: 100%;
+        width: 1024px%;
         height: 400px;
     }
     footer{
@@ -104,7 +104,6 @@ body {
 
    /* MAIN */
    .articuloPrincipal{
-    display:flex;
     background-color: #004E89;
     justify-content: center;
     align-items: center;
@@ -112,6 +111,7 @@ body {
 
    .imgArticuloPrincipal{
     width: 300px;
+    height: 250px;
     padding: 20px;
    }
    .tituloArtPrincipal{
@@ -120,14 +120,14 @@ body {
     background-color:#eb5e28;
     font-size: 40px;
     padding: 10px;
-    margin: 5px;
+    margin: 0px;
     border-radius: 20px;
     display:inline-block;
    }
    .parrafoArtPrincipal{
-    padding: 15px 20px;
+    padding: 5px;
     color:#dfd9d0;
-    font-size: 35px;
+    font-size: 33px;
     width: 600px;
     line-height: 40px;
     }
