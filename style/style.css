@@ -40,6 +40,8 @@ body {
     "footer";
     grid-template-rows: auto 400px 300px 400px 400px 70px;
     grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
     }
 
 
@@ -50,14 +52,14 @@ body {
     }
     .video{
         grid-area: video;
-        width: 1024px;
+        width: 100%;
         height: 400px;
     }
     .articuloPrincipal{
         grid-area: articulo;
         display:flex;
         height: 300px;
-        width: 1024px;
+        width: 100%;
     }
     .serviciosInicio{
         grid-area: servicios;
@@ -67,7 +69,7 @@ body {
     }
     .imagenFinal{
         grid-area: imagen;
-        width: 1024px%;
+        width: 100%;
         height: 400px;
     }
     footer{
