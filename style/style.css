@@ -508,9 +508,7 @@ body {
                 .nosotros {
                     height: 500px;
                 }
-                body{
-                    background-color: #2178bb;
-                }
+
                 .titulo1nosotros {
                     font-size: 40px;
                     line-height: 30px;
@@ -562,7 +560,6 @@ body {
             }
             .servicios {
                 margin:50px;
-                background-color: #004E89;
             }
             .clasificacionServicios {
             height: 300px;
