@@ -7,7 +7,7 @@
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
-html {
+body {
     background-color:#004E89;
 }
 
@@ -38,7 +38,7 @@ html {
     "servicios"
     "imagen"
     "footer";
-    grid-template-rows: 80px 400px 300px 400px 400px 70px;
+    grid-template-rows: auto 400px 300px 400px 400px 70px;
     grid-template-columns: 1fr;
     }
 
@@ -56,14 +56,14 @@ html {
     .articuloPrincipal{
         grid-area: articulo;
         display:flex;
-        height: 300px;
-        width: 100vw;
+        height: 280px;
+        width: 100%;
     }
     .serviciosInicio{
         grid-area: servicios;
         display:flex;
         height: 400px;
-        width: 100vw;
+        width: 100%;
     }
     .imagenFinal{
         grid-area: imagen;
@@ -72,9 +72,10 @@ html {
     }
     footer{
         grid-area: footer;
-        height: 80px;
+        height: 70px;
         background-color: #004E89;
-        width: 100vw;
+        width: 100%;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,10 +85,14 @@ html {
     
     .footerRedes{
         display: flex;
+        justify-content: center;
+        align-items: center;
         list-style-type: none;
+        margin: 0px;
+        padding: 0px;
     }
     .footerRedes li{
-        font-size: 25px;
+        font-size: 20px;
         list-style-type: none;
         padding: 0px 20px;
     }
@@ -107,7 +112,7 @@ html {
 
    .imgArticuloPrincipal{
     width: 300px;
-    padding: 30px;
+    padding: 20px;
    }
    .tituloArtPrincipal{
     font-weight: bolder;
@@ -131,34 +136,34 @@ html {
  .serviciosInicio {
     display:flex;
     justify-content: center;
-    align-items: flex-start;
-    width: 100vw;
+    align-items: center;
+    width: 100%;
 }
 .tresServicios {
-    width: 300px;
-    height: 400px;
-    padding: 20px;
+    width: 280px;
+    height: 380px;
+    padding:0px 20px;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 .serviciosInicio h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     color:#004E89;
     background-color: #eb5e28;
     border-radius: 10px;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
 }
 .serviciosInicio p {
-    font-size: 25px;
+    font-size: 20px;
     color:#dfd9d0;
     text-align: center;
     height: 100px;
-    width: 300px;
-    line-height:30px;
+    width: 280px;
+    line-height:25px;
     align-self: center;
 }
 .iconoServicio{
@@ -447,7 +452,7 @@ html {
         }
 
         /* RESPONSIVE TABLET */
-        @media (min-width: 320px) and (max-width: 768px) {
+        @media (min-width: 360px) and (max-width: 768px) {
 
             /* MEDIA QUERIES INICIO TABLET */
             .grilla {
@@ -639,58 +644,57 @@ html {
                 font-size: 25px;
             }
                 
-
-
         }
 
         /* RESPONSIVE MOBLILE */
-        @media (max-width: 320px){
+        @media (max-width: 360px){
 
         /* MEDIA QUERIES INICIO */
             .grilla {
-                width: 320px;
-                grid-template-rows: 100px 125px 150px 380px 125px 50px;
+                width: 360px;
+                grid-template-rows: auto 140px 150px 380px 130px 50px;
             }
            .video {
-            width: 320px;
-            height: 125px;
+            width: 360px;
+            height: 140px;
            }
          
             .imgArticuloPrincipal{
                 display:none;
                }
             .tituloArtPrincipal{
-                font-size: 20px;
-                padding: 8px;
-                margin: 5px 10px;
+                font-size: 16px;
+                padding: 5px;
+                margin: 0px;
                 border-radius: 20px;
                 display:inline-block;
                }
             .parrafoArtPrincipal{
-                padding: 10px;
+                padding: 5px;
                 font-size: 15px;
                 width: 300px;
-                line-height: 20px;
+                line-height: 18px;
                 }
             .articuloPrincipal {
                 display:flex;
                 flex-direction: column;
-                width: 320px;
-                height: 150px;
+                justify-content: center;
+                align-items: center;
+                width: 360px;
+                height: 140px;
             }
 
             .serviciosInicio {
                 display:flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
-                width: 320px;
+                width: 360px;
                 height: 380px;
-                justify-self: space-between;
             }
             .tresServicios {
                 width: 300px;
-                height: 300px;
+                height: 120px;
                 justify-content: center;
                 align-items:center;   
             }
@@ -701,41 +705,46 @@ html {
                 margin: 5px;
             }
             .serviciosInicio p {
-                font-size: 15px;
-                line-height: 15px;
-                height: 40px;
+                font-size: 13px;
+                line-height: 13px;
+                height: 35px;
                 width: 300px;
-                padding: 5px;
+                padding: 0px;
             }
             .serviciosInicio img {
                 display:none;
             }
 
             .imagenFinal{
-                width: 320px;
+                width: 100%;
                 height: 130px;
             }
             footer{
                 height: 50px;
+                width: 100%;
             }
             .footerRedes li{
                 font-size: 15px;
                 list-style-type: none;
                 padding: 0px 10px;
+                text-align: center;
+            }
+            .footerRedes {
+               padding:0px;
+               margin:0px;
             }
             
             /* MEDIA QUERIES NOSOTROS MOBILE */
             .grillaNosotros {
-                grid-template-rows: 750px 500px 100px;
+                grid-template-rows: 700px 500px 100px;
                 justify-content: space-around;
             }
        
                 .nosotros {
                     grid-area:nosotros;
-                    height: 750px;
+                    height: 700px;
                     width: 100%;
                     padding: 30px;
-                    background-color:#004E89;
                     justify-self:center;
             
                 }
@@ -754,7 +763,7 @@ html {
                 }
                 .imagenNosotros1 {
                     width: 300px;
-                    height: 250px;
+                    height: 200px;
                 }
                 .comunicadoresArticle {
                     display: flex;
@@ -806,7 +815,6 @@ html {
             }
             .servicios {
                 margin:30px;
-                background-color: #004E89;
             }
             .clasificacionServicios{
                 display:flex;
@@ -829,7 +837,11 @@ html {
                 flex-direction: column;
             }
             .titulo1servicios {
-                font-size: 20px;
+                font-size: 25px;
+            }
+            .titulo2servicios{
+                text-align: center;
+                padding: 10px 0px;
             }
             .titulo3servicios{
                 width: 220px;
@@ -858,7 +870,7 @@ html {
             grid-template-areas:
             "formulario"
             "contacto";
-            grid-template-columns: 320px;
+            grid-template-columns: 360px;
             grid-template-rows: 370px 300px;
             justify-content: center;
             row-gap: 10px;
