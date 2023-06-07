@@ -8,7 +8,7 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-    background-color:#004E89;
+    background-color:#2178bb;
 }
 
 /* NAV BOOSTRAP */
@@ -65,7 +65,7 @@ body {
         grid-area: servicios;
         display:flex;
         height: 400px;
-        width: 1024px;
+        width: 100%;
     }
     .imagenFinal{
         grid-area: imagen;
@@ -139,7 +139,6 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 .tresServicios {
     width: 280px;
@@ -197,9 +196,7 @@ body {
         background-color:#004E89;
 
     }
-    body{
-        background-color: #2178bb;
-    }
+
     .titulo1nosotros {
         font-size: 60px;
         line-height: 50px;
