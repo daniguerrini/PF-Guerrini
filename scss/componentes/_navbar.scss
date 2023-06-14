@@ -1,0 +1,19 @@
+.navbar {
+    width: 100%;
+    z-index: 1;
+    background-color: $azulOscuro;
+
+    a{
+        color: $crema;
+        font-weight: bold;
+        font-size: 20px;
+
+        &:hover {
+            color: $naranja;
+        }
+    }
+    a.active {
+        color:$naranja !important;
+    }
+    
+}

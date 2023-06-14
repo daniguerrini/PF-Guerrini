@@ -9,13 +9,13 @@
     <meta name="keywords" content="diseño, gráfico, multimedia, redes, diseño gráfico, publicidad ">
     <link rel="shortcut icon" href="../media/favicon1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header> 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img class="logo" src="../media/favicon.png" alt="Logo"width="50" height="35"></a>
+                  <a class="navbar-brand" href="../index.html"><img class="logo" src="../media/favicon.png" alt="Logo"width="50" height="35"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -32,34 +32,34 @@
     </header>
     
     <main class="contactanos">
-            <form class="formularioContacto" action="" method="get">
+            <form action="" method="get">
                 <div class="datosTodos">
-                    <label class="datos" for="nombre">NOMBRE</label><br>
-                    <input class="input" type="text" name="nombre" id="nombre"> <br>
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre">
                 </div>
         
                 <div class="datosTodos">
-                    <label class="datos" for="email">EMAIL</label> <br>
-                    <input class="input" type="email" name="email" id="email"><br>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
                 </div>
         
-                <div class="datos">
-                    <label class="datos" for="mensaje">MENSAJE</label> <br>
-                    <textarea class="mensaje" name="mensaje" id="mensaje"></textarea><br>
-                    <button>Enviar</button><br>
+                <div>
+                    <label for="mensaje">MENSAJE</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <button>Enviar</button>
                 </div>
             
             </form>
             <div class="contacto">
-                <img class="fotoWsp" src="../media/fotowsp.jpg" alt="fotowsp">
-                <h2 class="tituloContactanos">CONTACTANOS</h2>
+                <img src="../media/fotowsp.jpg" alt="fotowsp">
+                <h2>CONTACTANOS</h2>
                     <div class="redesContacto">
-                        <img class="iconosRedes" src="../media/iconos/whatsapp.png" alt="whatsapp">
+                        <img src="../media/iconos/whatsapp.png" alt="whatsapp">
                         <p class="pRedes">11 2222 2222</p>
                     </div>
                     <div class="redesContacto">
-                        <img class="iconosRedes" src="../media/iconos/instagram.png" alt="instagram">
-                        <p class="pRedes">@gea.design</p>
+                        <img src="../media/iconos/instagram.png" alt="instagram">
+                        <p>@gea.design</p>
                     </div>
                 </div>
     </main>

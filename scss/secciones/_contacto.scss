@@ -1,0 +1,109 @@
+.contactanos {
+    display:grid;
+    grid-template-areas: 
+    "formulario contacto";
+    grid-template-columns: 500px 300px;
+    grid-template-rows: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 20px 0px;
+
+    form {
+        grid-area: formulario;
+        text-align: center;
+        width: 500px;
+        height: 600px;
+        background-color: $azulOscuro;
+        padding: 20px;
+
+        .datosTodos {
+           @include flexCenter;
+           flex-direction: column;
+        }
+
+        label {
+            font-size: 25px;
+            color:$crema;
+        }
+
+        input {
+            width: 400px;
+            height: 30px;
+            border-color: $naranja;
+            border-width: 4px;
+            border-radius: 10px;
+            margin-top: 5px;
+
+            &:focus {
+                border-color: $azulClaro;
+            }
+        }
+
+        textarea {
+            border-color: $naranja;
+            border-width: 4px;
+            border-radius: 10px;
+            width: 400px;
+            height: 290px; 
+            margin-top: 5px;
+        }
+        
+        button {
+            background-color: $crema;
+            text-align: center;
+            color:$azulOscuro;
+            font-size: 25px;
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+
+            &:hover {
+                color:$naranja;
+            }
+        }
+    }
+    .contacto {
+        grid-area: contacto;
+        width: 300px;
+        width: 300px;
+        height: 600px;
+        background-color: $naranja;
+        text-align: center;
+        @include flexCenter;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+        }
+        h2 {
+            font-size: 28px;
+            color:$azulOscuro;
+            font-weight: bolder;
+            padding:10px; 
+        }
+
+        .redesContacto {
+           @include flexCenter;
+            height: 40px;
+            text-align: center;
+            color:$crema;
+            font-size: 25px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                background-color:$azulOscuro;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 10px;
+            }
+
+            p {
+                margin-top:13px; 
+            }
+
+        }
+    }
+}

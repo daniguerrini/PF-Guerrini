@@ -1,0 +1,399 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,400&display=swap");
+.navbar {
+  width: 100%;
+  z-index: 1;
+  background-color: #004E89;
+}
+.navbar a {
+  color: #dfd9d0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: #eb5e28;
+}
+.navbar a.active {
+  color: #eb5e28 !important;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header" "video" "articulo" "servicios" "imagen" "footer";
+  grid-template-rows: auto 400px 300px 400px 400px 70px;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-content: center;
+}
+.grilla header {
+  grid-area: header;
+}
+.grilla video {
+  grid-area: video;
+  width: 100%;
+  height: 400px;
+}
+.grilla section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: articulo;
+  background-color: #004E89;
+  height: 300px;
+  width: 100%;
+}
+.grilla section img {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+}
+.grilla section h1 {
+  font-weight: bolder;
+  color: #004E89;
+  background-color: #eb5e28;
+  font-size: 40px;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.grilla section p {
+  padding: 5px;
+  color: #dfd9d0;
+  font-size: 33px;
+  width: 600px;
+  line-height: 40px;
+}
+.grilla .serviciosInicio {
+  grid-area: servicios;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.grilla .serviciosInicio .tresServicios {
+  width: 320px;
+  height: 380px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.grilla .serviciosInicio .tresServicios img {
+  width: 230px;
+  align-self: center;
+  justify-self: flex-start;
+  padding: 30px;
+}
+.grilla .serviciosInicio .tresServicios h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #004E89;
+  background-color: #eb5e28;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+.grilla .serviciosInicio .tresServicios p {
+  font-size: 20px;
+  color: #dfd9d0;
+  text-align: center;
+  height: 150px;
+  width: 300px;
+  line-height: 25px;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+}
+.grilla .imagenFinal {
+  grid-area: imagen;
+  width: 100%;
+  height: 400px;
+}
+.grilla footer {
+  grid-area: footer;
+}
+
+.grillaNosotros {
+  display: grid;
+  grid-template-areas: "nosotros" "diseñadora" "banner";
+  grid-template-rows: 580px 300px 300px;
+  justify-content: center;
+}
+.grillaNosotros article {
+  grid-area: nosotros;
+  height: 580px;
+  width: 100%;
+  padding: 30px;
+  background-color: #004E89;
+}
+.grillaNosotros article h1 {
+  font-size: 60px;
+  line-height: 50px;
+  width: 400px;
+  padding: 20px;
+  color: #eb5e28;
+  font-weight: bold;
+}
+.grillaNosotros article h1 span {
+  font-size: 95px;
+  line-height: 85px;
+}
+.grillaNosotros article img {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+}
+.grillaNosotros article .comunicadoresArticle {
+  display: flex;
+  justify-content: flex-start;
+}
+.grillaNosotros article .comunicadoresArticle p {
+  width: 560px;
+  font-size: 28px;
+  color: #dfd9d0;
+  padding: 20px;
+}
+.grillaNosotros section {
+  grid-area: diseñadora;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  background-color: #dfd9d0;
+  width: 900px;
+  margin: 30px;
+}
+.grillaNosotros section .daniela {
+  display: inline-block;
+  text-align: right;
+  padding: 15px;
+  color: #004E89;
+  font-size: 30px;
+  line-height: 40px;
+}
+.grillaNosotros section .daniela h2 {
+  font-weight: bold;
+}
+.grillaNosotros section .daniela p {
+  color: #2178bb;
+  width: 600px;
+}
+.grillaNosotros section img {
+  width: 200px;
+  padding: 15px;
+  margin: 15px;
+}
+.grillaNosotros .bannerNosotros {
+  grid-area: banner;
+  width: 100%;
+  height: 300px;
+}
+
+.titulo1servicios {
+  padding: 15px 30px;
+  background-color: #eb5e28;
+  color: #004E89;
+  font-weight: bold;
+}
+
+.grillaServicios {
+  display: grid;
+  grid-template-areas: "diseño" "redes" "web";
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 100%;
+  row-gap: 20px;
+  margin: 30px;
+  background-color: #004E89;
+}
+.grillaServicios .diseñoGraf {
+  grid-area: diseño;
+}
+.grillaServicios .redesSociales {
+  grid-area: redes;
+}
+.grillaServicios .desarrolloWeb {
+  grid-area: web;
+}
+.grillaServicios h2 {
+  font-size: 30px;
+  color: #dfd9d0;
+  background-color: #004E89;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.grillaServicios h3 {
+  background-color: #eb5e28;
+  color: #004E89;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+.grillaServicios .clasificacionServicios {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.grillaServicios .clasificacionServicios .cadaServicio {
+  padding: 20px;
+  text-align: center;
+}
+.grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio {
+  display: flex;
+  justify-content: center;
+  width: 430px;
+}
+.grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio img {
+  width: 120px;
+  height: 120px;
+}
+.grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio p {
+  color: #dfd9d0;
+  font-size: 20px;
+  width: 300px;
+  padding: 0px 20px;
+  text-align: left;
+}
+
+.contactanos {
+  display: grid;
+  grid-template-areas: "formulario contacto";
+  grid-template-columns: 500px 300px;
+  grid-template-rows: 600px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin: 20px 0px;
+}
+.contactanos form {
+  grid-area: formulario;
+  text-align: center;
+  width: 500px;
+  height: 600px;
+  background-color: #004E89;
+  padding: 20px;
+}
+.contactanos form .datosTodos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactanos form label {
+  font-size: 25px;
+  color: #dfd9d0;
+}
+.contactanos form input {
+  width: 400px;
+  height: 30px;
+  border-color: #eb5e28;
+  border-width: 4px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.contactanos form input:focus {
+  border-color: #2178bb;
+}
+.contactanos form textarea {
+  border-color: #eb5e28;
+  border-width: 4px;
+  border-radius: 10px;
+  width: 400px;
+  height: 290px;
+  margin-top: 5px;
+}
+.contactanos form button {
+  background-color: #dfd9d0;
+  text-align: center;
+  color: #004E89;
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+}
+.contactanos form button:hover {
+  color: #eb5e28;
+}
+.contactanos .contacto {
+  grid-area: contacto;
+  width: 300px;
+  width: 300px;
+  height: 600px;
+  background-color: #eb5e28;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactanos .contacto img {
+  width: 200px;
+}
+.contactanos .contacto h2 {
+  font-size: 28px;
+  color: #004E89;
+  font-weight: bolder;
+  padding: 10px;
+}
+.contactanos .contacto .redesContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+  color: #dfd9d0;
+  font-size: 25px;
+}
+.contactanos .contacto .redesContacto img {
+  width: 30px;
+  height: 30px;
+  background-color: #004E89;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.contactanos .contacto .redesContacto p {
+  margin-top: 13px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #004E89;
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+footer ul li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0px 20px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #dfd9d0;
+}
+footer ul li a:hover {
+  color: #eb5e28;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+html body {
+  background-color: #2178bb;
+}
+
+/*# sourceMappingURL=main.css.map */

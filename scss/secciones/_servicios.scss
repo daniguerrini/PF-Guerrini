@@ -1,0 +1,76 @@
+.titulo1servicios {
+    padding: 15px 30px;
+    background-color: $naranja;
+    color:$azulOscuro;
+    font-weight: bold;
+}
+
+.grillaServicios{
+    display: grid;
+    grid-template-areas: 
+    "diseño"
+    "redes"
+    "web";
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+    margin: 30px;
+    background-color: $azulOscuro;
+
+    .diseñoGraf{
+        grid-area:diseño;
+    }
+    .redesSociales{
+        grid-area:redes;
+    }
+    .desarrolloWeb{
+        grid-area: web;
+    }
+
+    h2 {
+        font-size: 30px;
+        color:$crema;
+        background-color: $azulOscuro;
+        padding-left: 30px;
+        padding-top:10px;
+        font-weight: bold;
+    }
+
+    h3 {
+        background-color: $naranja;
+        color: $azulOscuro;
+        padding:7px;
+        margin-bottom: 20px;
+    }
+
+    .clasificacionServicios {
+        height: 300px;
+        display:flex;
+        justify-content: center;
+
+        .cadaServicio {
+            padding:20px;
+            text-align: center;
+
+            .contenidoServicio {
+                display:flex;
+                justify-content: center;
+                width: 430px;
+
+                img {
+                    width: 120px;
+                    height: 120px;    
+                }
+
+                p {
+                    color: $crema;
+                    font-size: 20px;
+                    width: 300px;
+                    padding: 0px 20px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}

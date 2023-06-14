@@ -1,0 +1,28 @@
+footer {
+    @include flexCenter;
+    height: 70px;
+    background-color: $azulOscuro;
+    width: 100%;
+
+    ul{
+        @include flexCenter;
+        padding: 0px;
+        margin: 0px;
+        
+        li{
+            font-size: 20px;
+            list-style-type: none;
+            padding: 0px 20px;
+
+            a{
+                text-decoration: none;
+                color:$crema;
+
+                &:hover {
+                    color: $naranja;
+                }
+            }
+        }
+        
+    }
+}
