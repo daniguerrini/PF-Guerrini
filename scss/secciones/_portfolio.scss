@@ -1,0 +1,16 @@
+.container{
+ background-color: $azulOscuro;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding: 20px;
+
+    p{
+        font-size: 20px;
+        color: $crema;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 20px;
+        background-color: $naranja;
+        text-align: center;
+    }
+}

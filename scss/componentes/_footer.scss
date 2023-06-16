@@ -26,3 +26,17 @@ footer {
         
     }
 }
+@media (max-width: 360px){
+    footer {
+    height: 50px;
+
+        ul{
+            li {
+                font-size: 15px;
+                padding: 0px 10px;
+            }
+        }
+    }
+
+
+}
