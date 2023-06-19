@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,400&display=swap");
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navbar {
   width: 100%;
   z-index: 1;
@@ -230,7 +238,7 @@
   height: 580px;
   width: 100%;
   padding: 30px;
-  background-color: #004E89;
+  background-image: linear-gradient(#2178bb, #004E89);
 }
 .grillaNosotros article h1 {
   font-size: 60px;
@@ -239,10 +247,12 @@
   padding: 20px;
   color: #eb5e28;
   font-weight: bold;
+  animation: aparecer 1s ease-in-out;
 }
 .grillaNosotros article h1 span {
   font-size: 95px;
   line-height: 85px;
+  animation: aparecer 1s ease-in-out;
 }
 .grillaNosotros article img {
   width: 400px;
@@ -603,9 +613,12 @@
   width: 100px;
   height: 50px;
   margin: 20px;
+  transition: width 0, 5s, height 0, 5s;
 }
 .contactanos form button:hover {
   color: #eb5e28;
+  width: 110px;
+  height: 55px;
 }
 .contactanos .contacto {
   grid-area: contacto;

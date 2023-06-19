@@ -54,9 +54,12 @@
             width: 100px;
             height: 50px;
             margin: 20px;
+            transition: width 0,5s, height 0,5s;
 
             &:hover {
                 color:$naranja;
+                width: 110px;
+                height: 55px;
             }
         }
     }
