@@ -54,9 +54,6 @@
             line-height: 40px;
         }
 
-
-
-
     }
 
     .serviciosInicio{
@@ -119,6 +116,67 @@
     }
 }
 
+/* RESPONSIVE TABLET */
+ @media (min-width: 360px) and (max-width: 768px) {
+    .grilla {
+        grid-template-rows: auto 300px 300px 300px 300px 70px;
+        grid-template-columns: 100%; 
+    
+        video{
+            height: 300px;
+        }
+    
+        section{
+            height: 300px;
+            padding: 15px;
+    
+            h1 {
+                font-size: 30px;
+                padding: 5px 15px;
+            }
+    
+            p{
+                font-size: 25px;
+                width: 15em;
+                line-height: 30px;
+            }
+    
+        }
+    
+        .serviciosInicio{
+            height: 300px;
+    
+            .tresServicios {
+                width: 250px;
+                height: 300px;
+
+                img{
+                    width: 150px;  
+                }
+        
+                h2{
+                    font-size: 20px;
+                    margin: 0px 0px 5px 0px;
+                }
+        
+                p{
+                    font-size: 1px;
+                    width: 220px;
+                }
+    
+            }
+    
+        }
+    
+        .imagenFinal{
+            width: 768px;
+            height: 300px;
+        }
+    }
+    }
+
+    
+/* RESPONSIVE MOBILE */
  @media (max-width: 360px) {
     .grilla {
         width: 360px;
@@ -177,6 +235,7 @@
         }
         .imagenFinal{
             height: 130px;
+            width: 360px;
         }
     }
         

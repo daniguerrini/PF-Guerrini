@@ -84,6 +84,67 @@
         height: 300px;
     }
 }
+
+
+/*RESPONSIVE TABLET*/
+@media(min-width: 360px) and (max-width: 768px) {
+    .grillaNosotros {
+    grid-template-rows: 460px 300px 300px;
+
+        article{
+            height: 460px;
+
+            h1{
+                font-size: 50px;
+                line-height: 45px;
+
+                span {
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+            }
+            
+            img {
+                width: 300px;
+                height: 200px;
+                padding: 0PX 20px;
+            }
+            .comunicadoresArticle {  
+                p{
+                    width: 400px;
+                    font-size: 20px;
+                    padding: 0px 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        section {
+            width: 600px;
+            padding: 10px;
+
+            .daniela {
+                color: $azulOscuro; 
+                font-size: 25px;
+                line-height: 30px; 
+
+                p{
+                    width: 360px;
+                }
+            }
+            img{
+                padding: 10px;
+            }
+        }
+        .bannerNosotros {
+            grid-area: banner;
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
+/*RESPONSIVE MOBILE*/
 @media (max-width: 360px){
     .grillaNosotros {
         grid-template-rows: 700px 500px 100px;
@@ -94,15 +155,15 @@
             justify-self:center;
 
             h1 {
-                font-size: 40px;
-                line-height: 40px;
+                font-size: 38px;
+                line-height: 34px;
                 width: 200px;
-                padding: 0px 20px;
+                padding: 0px 20px 10px 20px;
                 text-align:left;
 
                 span {
                     font-size: 60px;
-                    line-height: 65px;
+                    line-height: 60px;
                     text-align:center;
                 }
             }
@@ -122,6 +183,7 @@
                     line-height: 27px;
                     text-align: center;
                     align-self: center;
+                    padding-top: 10px;
                 }
             }
         }

@@ -116,6 +116,52 @@
   grid-area: footer;
 }
 
+/* RESPONSIVE TABLET */
+@media (min-width: 360px) and (max-width: 768px) {
+  .grilla {
+    grid-template-rows: auto 300px 300px 300px 300px 70px;
+    grid-template-columns: 100%;
+  }
+  .grilla video {
+    height: 300px;
+  }
+  .grilla section {
+    height: 300px;
+    padding: 15px;
+  }
+  .grilla section h1 {
+    font-size: 30px;
+    padding: 5px 15px;
+  }
+  .grilla section p {
+    font-size: 25px;
+    width: 15em;
+    line-height: 30px;
+  }
+  .grilla .serviciosInicio {
+    height: 300px;
+  }
+  .grilla .serviciosInicio .tresServicios {
+    width: 250px;
+    height: 300px;
+  }
+  .grilla .serviciosInicio .tresServicios img {
+    width: 150px;
+  }
+  .grilla .serviciosInicio .tresServicios h2 {
+    font-size: 20px;
+    margin: 0px 0px 5px 0px;
+  }
+  .grilla .serviciosInicio .tresServicios p {
+    font-size: 1px;
+    width: 220px;
+  }
+  .grilla .imagenFinal {
+    width: 768px;
+    height: 300px;
+  }
+}
+/* RESPONSIVE MOBILE */
 @media (max-width: 360px) {
   .grilla {
     width: 360px;
@@ -170,6 +216,7 @@
   }
   .grilla .imagenFinal {
     height: 130px;
+    width: 360px;
   }
 }
 .grillaNosotros {
@@ -249,6 +296,55 @@
   height: 300px;
 }
 
+/*RESPONSIVE TABLET*/
+@media (min-width: 360px) and (max-width: 768px) {
+  .grillaNosotros {
+    grid-template-rows: 460px 300px 300px;
+  }
+  .grillaNosotros article {
+    height: 460px;
+  }
+  .grillaNosotros article h1 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .grillaNosotros article h1 span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .grillaNosotros article img {
+    width: 300px;
+    height: 200px;
+    padding: 0PX 20px;
+  }
+  .grillaNosotros article .comunicadoresArticle p {
+    width: 400px;
+    font-size: 20px;
+    padding: 0px 20px;
+    line-height: 30px;
+  }
+  .grillaNosotros section {
+    width: 600px;
+    padding: 10px;
+  }
+  .grillaNosotros section .daniela {
+    color: #004E89;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .grillaNosotros section .daniela p {
+    width: 360px;
+  }
+  .grillaNosotros section img {
+    padding: 10px;
+  }
+  .grillaNosotros .bannerNosotros {
+    grid-area: banner;
+    width: 100%;
+    height: 300px;
+  }
+}
+/*RESPONSIVE MOBILE*/
 @media (max-width: 360px) {
   .grillaNosotros {
     grid-template-rows: 700px 500px 100px;
@@ -259,15 +355,15 @@
     justify-self: center;
   }
   .grillaNosotros article h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 38px;
+    line-height: 34px;
     width: 200px;
-    padding: 0px 20px;
+    padding: 0px 20px 10px 20px;
     text-align: left;
   }
   .grillaNosotros article h1 span {
     font-size: 60px;
-    line-height: 65px;
+    line-height: 60px;
     text-align: center;
   }
   .grillaNosotros article .comunicadoresArticle {
@@ -283,6 +379,7 @@
     line-height: 27px;
     text-align: center;
     align-self: center;
+    padding-top: 10px;
   }
   .grillaNosotros section {
     flex-direction: column-reverse;
@@ -314,7 +411,7 @@
 .grillaServicios {
   display: grid;
   grid-template-areas: "diseño" "redes" "web";
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 300px 300px 320px;
   grid-template-columns: 100%;
   row-gap: 20px;
   margin: 30px;
@@ -369,6 +466,76 @@
   text-align: left;
 }
 
+/*REPSONSIVE TABLET*/
+@media (min-width: 360px) and (max-width: 768px) {
+  .grillaServicios {
+    grid-template-rows: 260px 260px 300px;
+  }
+  .grillaServicios h3 {
+    font-size: 20px;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio {
+    width: 300px;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio img {
+    width: 110px;
+    height: 110px;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio p {
+    font-size: 15px;
+    line-height: 18px;
+    width: 200px;
+  }
+}
+/*RESPONSIVE MOBILE*/
+@media (max-width: 360px) {
+  .titulo1servicios {
+    width: 360 px;
+  }
+  .grillaServicios {
+    grid-template-rows: 600px 600px 330px;
+  }
+  .grillaServicios h2 {
+    font-size: 25px;
+    padding-left: 0px;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+  }
+  .grillaServicios h3 {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .grillaServicios .clasificacionServicios {
+    height: 570px;
+    flex-direction: column;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio {
+    height: 285px;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .borrar-texto {
+    display: none;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio {
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio img {
+    width: 140px;
+    height: 140px;
+  }
+  .grillaServicios .clasificacionServicios .cadaServicio .contenidoServicio p {
+    width: 280px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .grillaServicios .clasificacionServicios.web {
+    height: 270px;
+  }
+}
 .container {
   background-color: #004E89;
   margin-top: 20px;
@@ -414,7 +581,7 @@
   font-size: 25px;
   color: #dfd9d0;
 }
-.contactanos form input {
+.contactanos form input, .contactanos form textarea {
   width: 400px;
   height: 30px;
   border-color: #eb5e28;
@@ -422,16 +589,11 @@
   border-radius: 10px;
   margin-top: 5px;
 }
-.contactanos form input:focus {
+.contactanos form input:focus, .contactanos form textarea:focus {
   border-color: #2178bb;
 }
 .contactanos form textarea {
-  border-color: #eb5e28;
-  border-width: 4px;
-  border-radius: 10px;
-  width: 400px;
-  height: 290px;
-  margin-top: 5px;
+  height: 280px;
 }
 .contactanos form button {
   background-color: #dfd9d0;
@@ -447,7 +609,6 @@
 }
 .contactanos .contacto {
   grid-area: contacto;
-  width: 300px;
   width: 300px;
   height: 600px;
   background-color: #eb5e28;
@@ -487,6 +648,113 @@
   margin-top: 13px;
 }
 
+/*RESPONSIVE TABLET*/
+@media (min-width: 360px) and (max-width: 768px) {
+  .contactanos {
+    grid-template-columns: 350px 200px;
+    grid-template-rows: 450px;
+    width: 100%;
+  }
+  .contactanos form {
+    width: 350px;
+    height: 450px;
+  }
+  .contactanos form label {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .contactanos form input, .contactanos form textarea {
+    width: 300px;
+  }
+  .contactanos form textarea {
+    width: 300px;
+    height: 160px;
+  }
+  .contactanos form button {
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+  }
+  .contactanos form button:hover {
+    color: #eb5e28;
+  }
+  .contactanos .contacto {
+    width: 200px;
+    height: 450px;
+  }
+  .contactanos .contacto img {
+    width: 130px;
+  }
+  .contactanos .contacto h2 {
+    font-size: 20px;
+  }
+  .contactanos .contacto .redesContacto {
+    font-size: 20px;
+  }
+  .contactanos .contacto .redesContacto img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*RESPONSIVE MOBILE*/
+@media (max-width: 360px) {
+  .contactanos {
+    grid-template-areas: "formulario" "contacto";
+    grid-template-columns: 360px;
+    grid-template-rows: 370px 300px;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+  .contactanos form {
+    width: 250px;
+    height: 370px;
+    justify-self: center;
+  }
+  .contactanos form label {
+    font-size: 15px;
+  }
+  .contactanos form input, .contactanos form textarea {
+    width: 200px;
+    margin-top: 0px;
+  }
+  .contactanos form textarea {
+    width: 200px;
+    height: 115px;
+    margin-top: 0px;
+  }
+  .contactanos form button {
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+  }
+  .contactanos .contacto {
+    width: 250px;
+    height: 300px;
+    justify-self: center;
+  }
+  .contactanos .contacto img {
+    width: 130px;
+  }
+  .contactanos .contacto h2 {
+    font-size: 25px;
+  }
+  .contactanos .contacto .redesContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    margin: 5px;
+  }
+  .contactanos .contacto .redesContacto img {
+    width: 30px;
+  }
+  .contactanos .contacto .redesContacto p {
+    margin-top: 13px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;

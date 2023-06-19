@@ -42,12 +42,8 @@
         }
 
         textarea {
-            border-color: $naranja;
-            border-width: 4px;
-            border-radius: 10px;
-            width: 400px;
-            height: 290px; 
-            margin-top: 5px;
+            @extend input;
+            height: 280px;
         }
         
         button {
@@ -66,7 +62,6 @@
     }
     .contacto {
         grid-area: contacto;
-        width: 300px;
         width: 300px;
         height: 600px;
         background-color: $naranja;
@@ -107,3 +102,136 @@
         }
     }
 }
+
+
+/*RESPONSIVE TABLET*/
+@media(min-width: 360px) and (max-width: 768px) {
+    .contactanos {
+        grid-template-columns: 350px 200px;
+        grid-template-rows: 450px;
+        width: 100%;
+    
+        form {
+            width: 350px;
+            height: 450px;
+    
+            label {
+                font-size: 20px;
+                padding:5px;
+            }
+    
+            input {
+                width: 300px;
+            }
+    
+            textarea {
+                width: 300px;
+                height: 160px;
+            }
+            
+            button {
+                font-size: 20px;
+                width: 100px;
+                height: 35px;
+                margin: 10px;
+    
+                &:hover {
+                    color:$naranja;
+                }
+            }
+        }
+        .contacto {
+            width: 200px;
+            height: 450px;
+    
+            img {
+                width: 130px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+    
+            .redesContacto {
+                font-size: 20px;
+    
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+    
+            }
+        }
+    }
+}
+
+/*RESPONSIVE MOBILE*/
+@media (max-width: 360px){
+    .contactanos {
+        grid-template-areas:
+        "formulario"
+        "contacto";
+        grid-template-columns: 360px;
+        grid-template-rows: 370px 300px;
+        row-gap: 10px;
+        align-items: flex-start;
+
+        form {
+            width: 250px;
+            height: 370px;
+            justify-self: center;
+
+            label {
+                font-size: 15px;
+            }
+
+            input {
+                width: 200px;
+                margin-top: 0px;
+            }
+
+            textarea {
+                width: 200px;
+                height: 115px; 
+                margin-top: 0px;
+            }
+            
+            button {
+                font-size: 15px;
+                width: 70px;
+                height: 40px;
+                margin: 10px;
+                }
+        }
+        
+        .contacto {
+            width: 250px;
+            height: 300px;
+            justify-self: center;
+
+            img {
+                width: 130px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+
+            .redesContacto {
+            @include flexCenter;
+                height: 30px;
+                font-size: 20px;
+                margin:5px;
+
+                img {
+                    width: 30px;
+                }
+
+                p {
+                    margin-top:13px; 
+                }
+
+            }
+        }
+    }
+}
+
+   
